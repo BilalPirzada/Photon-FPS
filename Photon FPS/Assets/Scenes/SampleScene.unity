@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 313338317}
   - component: {fileID: 313338316}
   - component: {fileID: 313338320}
+  - component: {fileID: 313338321}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -370,6 +371,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e854cde7f41f8d84dbcc9ce6207fd25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &313338321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313338315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55440b924df8fac42b0242c839083766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menus:
+  - {fileID: 1432822364}
+  - {fileID: 1564308545}
 --- !u!1 &452076608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,13 +1143,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1432822363}
+  - component: {fileID: 1432822364}
   m_Layer: 5
   m_Name: LoadingMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1432822363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1154,6 +1171,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1432822364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432822362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d388c892b6c2f449aae4e3fa8b411e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuName: loading
 --- !u!1 &1564308543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1564308544}
+  - component: {fileID: 1564308545}
   m_Layer: 5
   m_Name: TitleMenu
   m_TagString: Untagged
@@ -1190,6 +1221,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1564308545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564308543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d388c892b6c2f449aae4e3fa8b411e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuName: title
 --- !u!1 &1684270963
 GameObject:
   m_ObjectHideFlags: 0
